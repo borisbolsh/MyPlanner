@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456764092791FF2B006EB90C /* Task+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456764082791FF2B006EB90C /* Task+Ext.swift */; };
+		4567640B2791FF51006EB90C /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567640A2791FF51006EB90C /* Date+Ext.swift */; };
+		4567640E2791FFD0006EB90C /* Db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567640D2791FFD0006EB90C /* Db.swift */; };
+		457A15312791AAF700BA05F5 /* MyPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 457A152F2791AAF700BA05F5 /* MyPlanner.xcdatamodeld */; };
+		457A15332791C3DB00BA05F5 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A15322791C3DB00BA05F5 /* TaskListTableViewController.swift */; };
+		457A15362791C4AF00BA05F5 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A15352791C4AF00BA05F5 /* TaskListCell.swift */; };
 		45C7C83227904E5F00BEA78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7C83127904E5F00BEA78E /* AppDelegate.swift */; };
-		45C7C83627904E5F00BEA78E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C7C83527904E5F00BEA78E /* ViewController.swift */; };
 		45C7C83B27904E6100BEA78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C7C83A27904E6100BEA78E /* Assets.xcassets */; };
 		45C7C83E27904E6100BEA78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C7C83C27904E6100BEA78E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		456764082791FF2B006EB90C /* Task+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Ext.swift"; sourceTree = "<group>"; };
+		4567640A2791FF51006EB90C /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		4567640D2791FFD0006EB90C /* Db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Db.swift; sourceTree = "<group>"; };
+		457A15302791AAF700BA05F5 /* MyPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPlanner.xcdatamodel; sourceTree = "<group>"; };
+		457A15322791C3DB00BA05F5 /* TaskListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
+		457A15352791C4AF00BA05F5 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
 		45C7C82E27904E5F00BEA78E /* MyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C7C83127904E5F00BEA78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45C7C83527904E5F00BEA78E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45C7C83A27904E6100BEA78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45C7C83D27904E6100BEA78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45C7C83F27904E6100BEA78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +43,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4567640C2791FF78006EB90C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				456764082791FF2B006EB90C /* Task+Ext.swift */,
+				4567640A2791FF51006EB90C /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4567640F2791FFDB006EB90C /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				4567640D2791FFD0006EB90C /* Db.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		457A15342791C41600BA05F5 /* TaskList */ = {
+			isa = PBXGroup;
+			children = (
+				457A15372791C4C000BA05F5 /* Cells */,
+				457A15322791C3DB00BA05F5 /* TaskListTableViewController.swift */,
+			);
+			path = TaskList;
+			sourceTree = "<group>";
+		};
+		457A15372791C4C000BA05F5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				457A15352791C4AF00BA05F5 /* TaskListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		457A15382791C4EA00BA05F5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				457A15342791C41600BA05F5 /* TaskList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		45C7C82527904E5F00BEA78E = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				45C7C845279057C400BEA78E /* App */,
-				45C7C83527904E5F00BEA78E /* ViewController.swift */,
+				4567640F2791FFDB006EB90C /* DB */,
+				457A15382791C4EA00BA05F5 /* Screens */,
+				4567640C2791FF78006EB90C /* Extensions */,
+				457A152F2791AAF700BA05F5 /* MyPlanner.xcdatamodeld */,
 			);
 			path = MyPlanner;
 			sourceTree = "<group>";
@@ -139,7 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45C7C83627904E5F00BEA78E /* ViewController.swift in Sources */,
+				4567640E2791FFD0006EB90C /* Db.swift in Sources */,
+				457A15362791C4AF00BA05F5 /* TaskListCell.swift in Sources */,
+				4567640B2791FF51006EB90C /* Date+Ext.swift in Sources */,
+				457A15312791AAF700BA05F5 /* MyPlanner.xcdatamodeld in Sources */,
+				456764092791FF2B006EB90C /* Task+Ext.swift in Sources */,
+				457A15332791C3DB00BA05F5 /* TaskListTableViewController.swift in Sources */,
 				45C7C83227904E5F00BEA78E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyPlanner/Default/Info.plist;
+				INFOPLIST_FILE = MyPlanner/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -309,7 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyPlanner/Default/Info.plist;
+				INFOPLIST_FILE = MyPlanner/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -350,6 +410,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		457A152F2791AAF700BA05F5 /* MyPlanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				457A15302791AAF700BA05F5 /* MyPlanner.xcdatamodel */,
+			);
+			currentVersion = 457A15302791AAF700BA05F5 /* MyPlanner.xcdatamodel */;
+			path = MyPlanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45C7C82627904E5F00BEA78E /* Project object */;
 }
